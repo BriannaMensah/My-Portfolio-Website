@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills and Experience</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Modern Luxury -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f5f5;
+            color: #2c3e50;
+            text-align: center;
+        }
+        nav {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #f1c40f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #d4af37;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            color: #2c3e50;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        table, th, td {
+            border: 1px solid #d4af37;
+        }
+        th, td {
+            padding: 10px;
+            font-family: 'Montserrat', sans-serif;
+            color: #2c3e50;
+        }
+        th {
+            background-color: #1a1a1a;
+            color: #f1c40f;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 10px;
+        }
+        .progress {
+            height: 20px;
+            background-color: #d4af37;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tando.html">Skills & Experience</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main heading -->
+    <h1>My Skills and Experience</h1>
+
+    <!-- Table for listing front-end skills and experience with progress bars -->
+    <table>
+        <tr>
+            <th>Skill</th>
+            <th>Experience Level</th>
+        </tr>
+        <tr>
+            <td>HTML & CSS</td>
+            <td>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;">80%</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;">60%</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>React.js</td>
+            <td>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%;">40%</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Copyright -->
+    <footer>
+        <p>&copy; 2024 Brianna Mensah. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
