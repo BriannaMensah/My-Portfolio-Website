@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brianna Mensah - Personal Website</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Modern Luxury -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Dark mode button styling */
+        #dark-mode-toggle {
+            background-color: #f1c40f; /* Gold button background */
+            color: #2c3e50; /* Dark grey text */
+            border: none; /* No border */
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        }
+
+        #dark-mode-toggle:hover {
+            background-color: #d4af37; /* Lighter gold on hover */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+        }
+
+        #dark-mode-toggle:focus {
+            outline: none; /* Remove focus outline */
+            box-shadow: 0 0 0 3px rgba(241, 196, 15, 0.5); /* Gold focus ring */
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #2c2c2c;
+            color: #e0e0e0;
+        }
+        body.dark-mode nav {
+            background-color: #2e4053;
+        }
+        body.dark-mode nav a {
+            color: #f1c40f;
+        }
+        body.dark-mode nav a:hover {
+            color: #d4af37;
+        }
+        body.dark-mode .content-wrapper {
+            background-color: #3e4a56;
+            color: #f5f5f5;
+        }
+        body.dark-mode h1, body.dark-mode h2 {
+            color: #f1c40f;
+        }
+        body.dark-mode .about-section p {
+            color: #ffffff;
+        }
+        body.dark-mode .project a {
+            color: #ffffff;
+        }
+        body.dark-mode .project a:hover {
+            color: #f5f5f5;
+        }
+        body.dark-mode ul li {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tando.html">Skills & Experience</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+        <button id="dark-mode-toggle">Dark Mode</button> <!-- Dark mode button -->
+    </nav>
+
+    <!-- Main content section -->
+    <div class="content-wrapper">
+        <h1>Welcome to My Personal Website!</h1>
+
+        <!-- About section introducing Brianna Mensah -->
+        <div class="about-section">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>My name is <strong>Brianna Mensah</strong>, and I am learning web development. I love working with various web technologies and building creative projects. Below, you will find some of my key projects and personal hobbies.</p>
+            </div>
+            <!-- About image -->
+            <div class="about-image">
+                <img src="about_me.jpg" alt="Brianna Mensah" class="profile-picture">
+            </div>
+        </div>
+
+        <!-- Projects section -->
+        <div id="projects" class="projects-section">
+            <div class="project">
+                <a href="index.html">Personal Portfolio Website</a>
+                <img src="bucket hat.jpg" alt="Portfolio Project">
+            </div>
+            <div class="project">
+                <a href="https://github.com/BriannaMensah" target="_blank">Coding Projects on GitHub</a>
+                <img src="Github Screenshot.jpg" alt="GitHub Project">
+            </div>
+            <div class="project">
+                <a href="https://briannamensah.github.io/E-Commerce-Store/" target="_blank">E-commerce Website</a>
+                <img src="Prada Inspired.png" alt="E-commerce Project">
+            </div>
+        </div>
+
+        <!-- Hobbies section -->
+        <div id="hobbies" class="hobbies-section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Coding</li>
+                <li>Crocheting</li>
+                <li>Cooking</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle dark mode toggle and greeting -->
+    <script>
+        window.onload = function() {
+            // Greeting message based on time of day
+            const now = new Date();
+            const hours = now.getHours();
+            let greeting;
+
+            if (hours < 12) {
+                greeting = "Good morning! Welcome to Brianna Mensah's website!";
+            } else if (hours < 18) {
+                greeting = "Good afternoon! Thanks for stopping by my website!";
+            } else {
+                greeting = "Good evening! I'm excited to share my work with you!";
+            }
+
+            alert(greeting);
+
+            // Dark mode toggle
+            const toggleButton = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+
+            const darkMode = localStorage.getItem('darkMode');
+            if (darkMode === 'enabled') {
+                body.classList.add('dark-mode');
+                toggleButton.innerText = 'Light Mode';
+            }
+
+            toggleButton.addEventListener('click', function() {
+                body.classList.toggle('dark-mode');
+                if (body.classList.contains('dark-mode')) {
+                    localStorage.setItem('darkMode', 'enabled');
+                    toggleButton.innerText = 'Light Mode';
+                } else {
+                    localStorage.setItem('darkMode', 'disabled');
+                    toggleButton.innerText = 'Dark Mode';
+                }
+            });
+        };
+    </script>
+
+    <!-- Copyright -->
+    <footer>
+        <p>&copy; 2024 Brianna Mensah. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
