@@ -3,8 +3,7 @@
 Welcome to my personal portfolio website! This website showcases my skills and projects in web development, coding, crocheting, and cooking.
 
 ## Live Website
-Visit the live website here: [
-](https://lucent-banoffee-3b7077.netlify.app/)
+Visit the live website here: [(https://lucent-banoffee-3b7077.netlify.app/).
 ## Features
 - Dynamic **Welcome Message** based on the time of day
 - **Light/Dark Mode** toggle for user experience
