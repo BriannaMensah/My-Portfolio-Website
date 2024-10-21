@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Content</title>
+    <!-- Google Fonts for Modern Luxury -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f5f5;
+            color: #2c3e50;
+            margin: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #f1c40f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #d4af37;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            color: #2c3e50;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        video, audio, iframe {
+            width: 60%;
+            margin: 20px 0;
+            border: 2px solid #d4af37; /* Gold border for media */
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        video:hover, audio:hover, iframe:hover {
+            transform: scale(1.05); /* Slight scale effect on hover */
+        }
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .description {
+            font-size: 1.2em;
+            margin-top: 15px;
+            color: #34495e;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Styling for headers */
+        h4 {
+            color: #2c3e50; /* Dark navy in light mode */
+            transition: color 0.5s ease;
+        }
+        h4:hover {
+            color: #f1c40f; /* Gold on hover */
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #2c2c2c;
+            color: #e0e0e0;
+        }
+        body.dark-mode nav {
+            background-color: #2e4053;
+        }
+        body.dark-mode nav a {
+            color: #f1c40f;
+        }
+        body.dark-mode nav a:hover {
+            color: #d4af37;
+        }
+        body.dark-mode .content-wrapper {
+            background-color: #3e4a56;
+            color: #f5f5f5;
+        }
+        body.dark-mode h1, body.dark-mode h2 {
+            color: #f1c40f;
+        }
+
+        /* Change "Creating Delicious Moments" to white in dark mode */
+        body.dark-mode h4 {
+            color: #ffffff; /* White in dark mode */
+        }
+        body.dark-mode h4:hover {
+            color: #f1c40f; /* Gold on hover in dark mode */
+        }
+
+        body.dark-mode .description {
+            color: #ffffff; /* White description text in dark mode */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tando.html">Skills & Experience</a>
+        <a href="media.html">Media</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="content-wrapper">
+        <h1>Media Content</h1>
+
+        <!-- Title and Local Video -->
+        <h4>Creating Delicious Moments</h4>
+        <video controls>
+            <source src="MediaContentCooking.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Description Area -->
+        <div class="description">
+            <p>I launched a series called Cooking for My Future Husband to showcase my culinary expertise while sharing a deeper, meaningful message. Each episode features a diverse range of dishes from around the world, spanning from elegant breakfast creations to indulgent desserts. Alongside these recipes, I reflect on the qualities of a Proverbs 31 woman, offering insights into how we can embody grace, kindness, and wisdom, nurturing one another with love and intention in our daily lives.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Copyright -->
+    <footer>
+        <p>&copy; 2024 Brianna Mensah. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
