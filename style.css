@@ -1,0 +1,190 @@
+/* Global styles for the website */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #2c3e50;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+nav a {
+    margin: 0 20px;
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #d4af37;
+}
+
+/* Styling for headings */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: #2c3e50;
+    letter-spacing: 2px;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    color: #34495e;
+}
+
+/* Content wrapper styling */
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* About section styling */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+/* Styling for the about image */
+.about-image {
+    height: 300px;
+    width: 600px;
+    border-radius: 10px;
+    border: 3px solid #d4af37;
+    overflow: hidden;
+}
+.profile-picture {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Projects section styling */
+.projects-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Styling for project links */
+.project a {
+    display: block;
+    color: #34495e;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.project img {
+    height: 150px;
+    width: 150px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    border: 2px solid #d4af37;
+}
+.project img:hover {
+    transform: scale(1.1);
+}
+.project a:hover {
+    color: #d4af37;
+}
+
+/* Hobbies section styling */
+.hobbies-section {
+    margin-top: 40px;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Blinking text animation for "Hobbies" heading */
+.hobbies-section h2 {
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Dark mode button styling */
+#dark-mode-toggle {
+    background-color: #f1c40f; /* Gold button background */
+    color: #2c3e50; /* Dark grey text on button */
+    border: none; /* No border */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+#dark-mode-toggle:hover {
+    background-color: #d4af37; /* Lighter gold on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+#dark-mode-toggle:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 0 3px rgba(241, 196, 15, 0.5); /* Add gold focus ring */
+}
+
+/* Dark mode styles with luxurious tone */
+body.dark-mode {
+    background-color: #2c2c2c; /* Softer, elegant dark grey background */
+    color: #e0e0e0; /* Softer white for body text */
+}
+body.dark-mode nav {
+    background-color: #2e4053; /* Deep, rich dark grey for navigation */
+}
+body.dark-mode nav a {
+    color: #f1c40f; /* Elegant gold for links */
+}
+body.dark-mode nav a:hover {
+    color: #d4af37; /* Slightly lighter gold on hover */
+}
+body.dark-mode .content-wrapper {
+    background-color: #3e4a56; /* Darker tone for content wrapper */
+    color: #f5f5f5; /* Light text for readability */
+}
+body.dark-mode h1 {
+    color: #f1c40f; /* Gold color for "Welcome to My Personal Website!" */
+}
+body.dark-mode h2 {
+    color: #f1c40f; /* Gold color for "About Me" */
+}
+body.dark-mode .about-section p {
+    color: #ffffff; /* White text for description */
+}
+body.dark-mode .project a {
+    color: #ffffff; /* White text for project links */
+}
+body.dark-mode .project a:hover {
+    color: #f5f5f5; /* Stays soft white when hovered */
+}
+body.dark-mode ul li {
+    color: #ffffff; /* White color for hobbies */
+}
